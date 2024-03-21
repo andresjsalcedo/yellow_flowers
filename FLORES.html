@@ -9,7 +9,10 @@
     <title>FLORES PARA SHARO</title>
 </head>
 
-<body class="container">
+<body class="container" onclick="playaudio()">
+  <audio id="audio1" loop>
+    <source src="./img/utomp3.com - pluto projector  rex orange county_320kbps.mp3" type="audio/mp3">
+  </audio>
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
@@ -308,5 +311,10 @@
       </div>
     </div>
     <script src="main.js"></script>
+    <script>
+      function playaudio(){
+        document.getElementById("audio1").play();
+      }
+    </script>
   </body>
 </html>
